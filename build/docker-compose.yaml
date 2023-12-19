@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  local:
+    build: ./
+    stdin_open: true
+    tty: true
+    image: whisper_zero:v0.0.1
+    ports:
+      - 8888:8888
+    volumes:
+      - /mnt/d/code/whisper-zero/:/whisper_zero
+      - /mnt/d/datasets/:/datasets
+      - /mnt/d/models/:/models
+    ulimits:
+      memlock: -1
+      stack: 67108864
+    shm_size: 16gb
