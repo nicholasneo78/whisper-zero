@@ -1,2 +1,9 @@
 requests==2.31.0
 python-dotenv==1.0.0
+tqdm==4.66.1
+
+num2words==0.5.12
+nltk==3.8.1
+text2digits==0.1.0
+jiwer==3.0.0
+hanziconv==0.3.2
